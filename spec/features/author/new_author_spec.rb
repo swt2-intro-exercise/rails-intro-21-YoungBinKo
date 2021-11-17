@@ -19,7 +19,7 @@ describe "New author page", type: :feature do
     page.fill_in 'author[first_name]', with: 'Alan'
     page.fill_in 'author[homepage]', with: 'http://wikipedia.org/Alan_Turing'
     find('input[type="submit"]').click
-    Author.exists?(:name => 'Alan Turing')
+    Author.exists?(:first_name => 'Alan', :last_name => 'Turing')
   end
 
 end
