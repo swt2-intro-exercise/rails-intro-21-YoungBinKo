@@ -10,8 +10,8 @@ class AuthorsController < ApplicationController
         @author = Author.new(author_params)
  
         @author.save
-        #redirect_to @author
-        redirect_to root_path, notice: 'Success!'
+        redirect_to @author
+        #redirect_to root_path, notice: 'Success!'
     end
 
     private
