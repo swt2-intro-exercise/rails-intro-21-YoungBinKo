@@ -21,5 +21,4 @@ describe "New author page", type: :feature do
     find('input[type="submit"]').click
     Author.exists?(:first_name => 'Alan', :last_name => 'Turing')
   end
-
 end
